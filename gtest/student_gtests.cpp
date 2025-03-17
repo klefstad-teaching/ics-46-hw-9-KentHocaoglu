@@ -1,8 +1,11 @@
 #include <gtest/gtest.h>
 
-#include "dijkstras.h"
-#include "ladder.h"
+#include "../src/dijkstras.h"
+#include "../src/ladder.h"
 
-TEST(Replace, Me) {
-  EXPECT_TRUE(false);
+
+TEST(isadj, working) {
+  EXPECT_TRUE( is_adjacent("cog", "pog") );
+  EXPECT_FALSE( is_adjacent("cog", "poggers") );
+
 }
